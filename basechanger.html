@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number Base Converter</title>
+        <link rel="stylesheet" type="text/css" href="basechanger.css"/>
+        <script src="basechanger.js"></script>
+    </head>
+    <body>
+        <h1>Number Base Converter</h1>
+        <p id="info">Supports bases 2-36</p><br><br>
+        <form>
+          A number:<br>
+            <input type="text" class="field" name="num_init" id="1" onclick="this.select();">
+            <br><br>
+            of base:<br>
+            <input type="text" class="field" name="base_init" id="2" onclick="this.select();"><br><br>
+            <input type=button class="button" value="Binary" onclick="setInit(2)">
+            <input type=button class="button" value="Octal" onclick="setInit(8)">
+            <input type=button class="button" value="Decimal" onclick="setInit(10)">
+            <input type=button class="button" value="Hexidecimal" onclick="setInit(16)">
+            <br><br>
+            to base:<br>
+            <input type="text" class="field" name="base_new" id="3" onclick="this.select();"><br><br>
+            <input type=button class="button" value="Binary" onclick="setNew(2)">
+            <input type=button class="button" value="Octal" onclick="setNew(8)">
+            <input type=button class="button" value="Decimal" onclick="setNew(10)">
+            <input type=button class="button" value="Hexidecimal" onclick="setNew(16)">
+            <br><br>
+            is equal to:
+            <p id="num_new"></p>
+        </form>
+    </body>
+</html>
